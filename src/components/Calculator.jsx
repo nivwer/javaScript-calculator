@@ -35,7 +35,8 @@ const Calculator = () => {
   const styles = "p-3 transition duration-300 ease-in-out hover:bg-zinc-800 outline outline-offset-0 outline-1 outline-zinc-800"
 
   return (
-    <div id='display' className='text-zinc-400  grid content-center bg-black h-screen w-screen mx-auto'>
+
+      <div id='display' className='text-zinc-400  grid content-center bg-black h-screen w-screen mx-auto'>
       <div className='mx-auto p-2 w-screen h-screen flex flex-col justify-between  border border-zinc-700 rounded-sm 
       lg:w-80  lg:h-96 
       '>
@@ -72,7 +73,9 @@ const Calculator = () => {
         <button className={styles} id='add' onClick={() => handleOperatorClick('+')}>+</button>
       </div>
       </div>
-      
+      <div className='text-center p-4 text-zinc-700 hidden lg:inline-block'>
+      <a href="https://github.com/nivwer" target='_blank'>by nivwer</a>
+    </div>
     </div>
   );
 };
